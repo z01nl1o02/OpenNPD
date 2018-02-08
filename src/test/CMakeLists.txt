@@ -21,3 +21,12 @@ target_link_libraries( test_cam
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../npd/ npd.out)
 
+install(TARGETS test_detect test_cam
+	RUNTIME DESTINATION bin
+	LIBRARY DESTINATION lib
+	ARCHIVE DESTINATION libstatic)
+
+
+
+
+
